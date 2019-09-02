@@ -1,9 +1,8 @@
 ---
 output: github_document
-bibliography: biblio.bib
 ---
 
-```{r, echo = FALSE}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   collapse=TRUE
 )
