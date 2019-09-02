@@ -1,0 +1,14 @@
+---
+output: github_document
+bibliography: biblio.bib
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse=TRUE
+)
+```
+
+
+<!-- Este .md fue generado a partir del .Rmd homónimo. Edítese el .Rmd -->
+
