@@ -10,7 +10,7 @@ Estudia la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/m
 Tarea 0. Toma nota de tu número asignado
 ----------------------------------------
 
-Si estás leyendo este documento en GitHub, podrás ver esta lista renderizada en HTML. Si estás leyendo el archivo `.Rmd` estarás viendo líneas de código de R; ejecútalas en la consola de R. Esta lista contiene números aleatorios para cada persona. Utiliza dicho número cuando se te solicite:
+Podrás leer, al final del trozo de código de R a continuación, una lista de números aleatorios asignados a cada estudiante. Dichos números los usarás para cumplir con tus asignaciones cuando se te solicite. No tienes que hacer nada, sólo toma nota de tu número.
 
 ``` r
 estfuente <- paste0(
@@ -52,13 +52,15 @@ df #Muestra la tabla df
 Tarea 1. Abre la matriz de comunidad `mite` y despliégala
 ---------------------------------------------------------
 
-A partir de este punto necesitarás editar este archivo `.Rmd`, para colocar tus respuestas donde te indico. Si ya aceptaste la asignación, clona tu repo localmente usando la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md).
+A partir de este punto necesitarás editar el archivo `.Rmd`, para colocar tus respuestas donde te indico más abajo. Si ya aceptaste la asignación, clona tu repo localmente en RStudio usando la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md), de manera que puedas ejecutar código de R.
 
-1.  Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)", pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite). `mite` es un conjunto de datos sobre ácaros oribátidos colectados y procesados por Borcard y colaboradores, a partir de 70 núcleos de suelo en una parcela de 2.5x10 m \[@borcard1992partialling, @borcard1994environmental\]. Tendrás una asignación para desarrollar íntegramente dicha guía, y aprender más sobre este conjunto de datos. Por lo pronto, añado que dicho conjunto pertenece al paquete `vegan`. Con lo que leíste en la sección indicada, carga la matriz de comunidad `mite` y haz que se despligue en tu `.Rmd`
+1.  Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)", pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite).
 
-2.  Carga la matriz de comunidad.
+> Brevemente. `mite` es un conjunto de datos, disponibles en el paquete `vegan`, que contiene información sobre ácaros oribátidos colectados y procesados por Borcard y colaboradores, a partir de 70 núcleos de esfagnos extraídos de una turbera de 2.5x10 m en el lago Geai, Canadá (Borcard, Legendre, & Drapeau, 1992, Borcard & Legendre (1994)). Aunque en esta ocasión sólo aprovecharás una mínima parte de dicha guía, próximamente, tendrás asignaciones para donde desarrollarás todo su contenido.
 
-3.  Imprímela.
+1.  Carga la matriz de comunidad a memoria.
+
+2.  Imprímela. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd`.
 
 -   Tus respuestas en este bloque de código:
 
@@ -100,3 +102,10 @@ Tarea final: *commit*&gt;*push*
 -------------------------------
 
 Usa la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md) para sincronizar con tu repo remoto.
+
+Referencias
+===========
+
+Borcard, D., & Legendre, P. (1994). Environmental control and spatial structure in ecological communities: An example using oribatid mites (acari, oribatei). *Environmental and Ecological Statistics*, *1*(1), 37–61.
+
+Borcard, D., Legendre, P., & Drapeau, P. (1992). Partialling out the spatial component of ecological variation. *Ecology*, *73*(3), 1045–1055.
