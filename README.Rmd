@@ -91,23 +91,23 @@ Si lograste imprimir en pantalla un `data.frame` con varias columnas y filas, co
 
 ## Tarea 2. Teje tu `.Rmd`.
 
-Teje para que generes tu `.md` usando la [sección "Teje" de la Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md#teje). Podrás ver una previsualización de tu resultado desde RStudio.
+Genera tu `.md` usando la [sección "Teje" de la Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md#teje). Luego de tejer, podrás ver una previsualización de tu resultado desde RStudio antes de subirlo a GitHub.
 
 ## Tarea 3. Filtra la matriz `mite`
 
 1. Estudia la sección [Una pequeña parada para explicar cómo filtrar](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#una-pequeña-parada-para-explicar-cómo-filtrar), y filtra la matriz mostrando sólo la fila que corresponde a tu número.
 
-* Tu respuesta en este bloque de código:
-```{r}
-mite[,] #Debes colocar tu número dentro del corchete. Lee la guía
-```
+    * Tu respuesta en este bloque de código:
+    ```{r}
+    mite[,] #Debes colocar tu número dentro del corchete. Lee la guía
+    ```
 
 2. Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?
 
-* Tus respuestas en este bloque de código:
-```{r}
-mite[,] #Debes colocar tu número y el de la columna dentro del corchete. Lee la guía
-```
+    * Tus respuestas en este bloque de código:
+    ```{r}
+    mite[,] #Debes colocar tu número y el de la columna dentro del corchete. Lee la guía
+    ```
 
 ## Tarea final: *commit*>*push*
 
