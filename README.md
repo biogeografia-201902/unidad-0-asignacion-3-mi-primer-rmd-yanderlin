@@ -7,8 +7,6 @@ Primero lo primero: acepta la invitación, genera tu repo en GitHub y clónalo l
 
 A continuación, estudia la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md). Puedes darle un vistazo general primero, y luego utilizarla como referencia mientras vas haciendo esta asignación.
 
-> El símbolo `#` dentro los bloques de código precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar ayudas
-
 Tarea 0. Toma nota de tu número asignado
 ----------------------------------------
 
@@ -65,6 +63,8 @@ A partir de este punto necesitarás editar el archivo `README.Rmd` (observa bien
 3.  Carga la matriz de comunidad a memoria (segunda línea con `data()`).
 
 4.  Imprímela. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd` (tercera línea, donde escribirás el nombre del objeto antes del símbolo `#`).
+
+> El símbolo `#` **dentro los bloques de código que verás a continuación** precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar pistas para responder a lo solicitado.
 
 -   Tus respuestas en este bloque de código:
 
