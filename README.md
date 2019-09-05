@@ -54,19 +54,19 @@ Tarea 1. Abre la matriz de comunidad `mite` y despliégala
 
 A partir de este punto necesitarás editar el archivo `README.Rmd` (observa bien, el que termina en `.Rmd`), porque tendrás que colocar tus respuestas en dicho archivo. Por lo tanto, si ya aceptaste la asignación, clona tu repo localmente en RStudio usando la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md), abre el archivo `README.Rmd` y comienza a escribir y a ejecutar (en la consola) el código que se te solicita. Recuerda que debes colocar tu código dentro de los bloques creados al efecto. Un bloque de código comienza por algo tal que esto ```` ```{r} ```` y termina con esto ```` ``` ````.
 
-1.  Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)", pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite) (ya tendrás tiempo de leer la guía completa).
+-   **Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)"**, pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite) (ya tendrás tiempo de leer la guía completa).
 
     > Brevemente. `mite` es un conjunto de datos, disponibles en el paquete `vegan`, que contiene información sobre ácaros oribátidos colectados y procesados por Borcard y colaboradores, a partir de 70 núcleos de esfagnos extraídos de una turbera de 2.5x10 m en el lago Geai, Canadá (Borcard & Legendre, 1994; Borcard, Legendre, & Drapeau, 1992).
 
-2.  Carga el paquete `vegan` (primera línea, `library()`).
+-   **Carga el paquete `vegan`** (primera línea, `library()`).
 
-3.  Carga la matriz de comunidad en la memoria (segunda línea con `data()`).
+-   **Carga la matriz de comunidad en la memoria** (segunda línea con `data()`).
 
-4.  Imprímela. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd` (tercera línea, donde escribirás el nombre del objeto antes del símbolo `#`).
+-   **Imprímela**. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd` (tercera línea, donde escribirás el nombre del objeto antes del símbolo `#`).
 
-> El símbolo `#` **dentro los bloques de código que verás a continuación** precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar pistas para responder a lo solicitado.
+    > El símbolo `#` **dentro los bloques de código que verás a continuación** precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar pistas para responder a lo solicitado.
 
--   Tus respuestas en este bloque de código:
+    -   Tus respuestas en este bloque de código:
 
 ``` r
 library() #Escribe el nombre del paquete al cual pertenece el conjunto de datos entre los paréntesis
@@ -74,7 +74,9 @@ data() #Rellena el nombre del conjunto de datos entre los paréntesis
   #Por delante del símbolo de almohadilla, escribe el nombre del objeto
 ```
 
-> Notas Tal como explica la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md), prueba tu código línea a línea. Configura la ejecución de código en la consola de R, marcando la opción `Chunk Output in Console` de la rueda dentada (barra de herramientas de archivo `.Rmd`). Así, cuando presiones *Run* (`Ctrl+Enter` para ejecutar la línea seleccionada) tu código se ejecutará en la consola de R y en ésta verás los resultados.
+    >**Notas**. Tal como explica la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md), prueba tu código línea a línea.
+
+> Configura la ejecución de código en la consola de R, marcando la opción `Chunk Output in Console` de la rueda dentada (barra de herramientas de archivo `.Rmd`). Así, cuando presiones *Run* (`Ctrl+Enter` para ejecutar la línea seleccionada) tu código se ejecutará en la consola de R y en ésta verás los resultados.
 
 Si lograste imprimir en pantalla un `data.frame` con varias columnas y filas, conseguiste cargar correctamente la matriz de comunidad `mite`.
 
@@ -86,21 +88,25 @@ Genera tu `.md` usando la [sección "Teje" de la Guía mínima de RMarkdown](htt
 Tarea 3. Filtra la matriz `mite`
 --------------------------------
 
-1.  Estudia la sección [Una pequeña parada para explicar cómo filtrar](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#una-pequeña-parada-para-explicar-cómo-filtrar), y filtra la matriz mostrando sólo la fila que corresponde a tu número.
+-   Filtra la matriz mostrando sólo la fila que corresponde a tu número.
 
-    -   Tu respuesta en este bloque de código:
+> `mite` es un `data.frame` de 70 filas (sitios) y 35 columnas (especies). Denominemos `x` a un `data.frame`. Podemos filtrar a `x` mediante índices de extracción de filas `i` y columnas `j`, de la siguiente manera: `x[i,j]`. Como ves, el índice de filas corresponde a la primera parte dentro de los corchetes, y el índice de columnas a la segunda. Así, si necesito la fila 1 de `x`, con todas sus columnas, sólo escribo `x[1,]`; si sólo necesito la fila 1 columna 1 ejecuto `x[1,1]`.
 
-    ``` r
-    mite[,] #Debes colocar tu número dentro del corchete. Lee la guía
-    ```
+    >Profundiza estudiando la sección [Una pequeña parada para explicar cómo filtrar](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#una-pequeña-parada-para-explicar-cómo-filtrar).
 
-2.  Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?
+> Tu respuesta en este bloque de código:
 
-    -   Tus respuestas en este bloque de código:
+``` r
+mite[,] #Debes colocar tu número asignado dentro del corchete donde corresponda.
+```
 
-    ``` r
-    mite[,] #Debes colocar tu número en el índice de filas, y en el otro el de la columna. Lee la guía
-    ```
+-   Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?
+
+> Tus respuestas en este bloque de código:
+
+``` r
+mite[,] #Debes colocar tu número en el índice de filas, y en el otro el de la columna. Lee la guía
+```
 
 Tarea 4. Teje
 -------------
