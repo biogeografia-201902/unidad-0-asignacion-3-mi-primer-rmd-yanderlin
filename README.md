@@ -3,14 +3,16 @@
 Mi primer RMarkdown
 ===================
 
-Primero lo primero: acepta la invitación, genera tu repo en GitHub y clónalo localmente en RStudio. Tienes como referencia la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md)
+Primero lo primero: acepta la invitación, genera tu repo en GitHub y clónalo localmente en RStudio. Si no te acuerdas de cómo hacerlo, tienes como referencia la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md)
 
-Estudia la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md). Puedes estudiarla mientras vas haciendo esta asignación.
+A continuación, estudia la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md). Puedes darle un vistazo general primero, y luego utilizarla como referencia mientras vas haciendo esta asignación.
+
+> El símbolo `#` dentro los bloques de código precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar ayudas
 
 Tarea 0. Toma nota de tu número asignado
 ----------------------------------------
 
-Podrás leer, al final del trozo de código de R a continuación, una lista de números aleatorios asignados a cada estudiante. Dichos números los usarás para cumplir con tus asignaciones cuando se te solicite. No tienes que hacer nada, sólo toma nota de tu número.
+Podrás leer, al final del trozo de código de R a continuación, una lista de números aleatorios asignados a cada estudiante. Dichos números los usarás para cumplir con tus asignaciones cuando se te solicite. No tienes que hacer nada en la consola de R, ni ejecutar el código, sólo toma nota de tu número.
 
 ``` r
 estfuente <- paste0(
@@ -52,15 +54,17 @@ df #Muestra la tabla df
 Tarea 1. Abre la matriz de comunidad `mite` y despliégala
 ---------------------------------------------------------
 
-A partir de este punto necesitarás editar el archivo `.Rmd`, para colocar tus respuestas donde te indico más abajo. Si ya aceptaste la asignación, clona tu repo localmente en RStudio usando la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md), de manera que puedas ejecutar código de R.
+A partir de este punto necesitarás editar el archivo `README.Rmd` (observa bien, el que termina en `.Rmd`), para colocar tus respuestas donde te indico más abajo. Si ya aceptaste la asignación, clona tu repo localmente en RStudio usando la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md), de manera que puedas ejecutar código en la consola de R.
 
-1.  Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)", pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite).
+1.  Entra en la guía "Introducción a R y análisis exploratorio de datos (EDA)", pero **sólo** lee la parte [El conjunto de datos mite](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/introduccion-a-r.md#el-conjunto-de-datos-mite) (ya tendrás tiempo de leer la guía completa).
 
-> Brevemente. `mite` es un conjunto de datos, disponibles en el paquete `vegan`, que contiene información sobre ácaros oribátidos colectados y procesados por Borcard y colaboradores, a partir de 70 núcleos de esfagnos extraídos de una turbera de 2.5x10 m en el lago Geai, Canadá (Borcard, Legendre, & Drapeau, 1992, Borcard & Legendre (1994)). Aunque en esta ocasión sólo aprovecharás una mínima parte de dicha guía, próximamente, tendrás asignaciones para donde desarrollarás todo su contenido.
+    > Brevemente. `mite` es un conjunto de datos, disponibles en el paquete `vegan`, que contiene información sobre ácaros oribátidos colectados y procesados por Borcard y colaboradores, a partir de 70 núcleos de esfagnos extraídos de una turbera de 2.5x10 m en el lago Geai, Canadá (Borcard & Legendre, 1994; Borcard, Legendre, & Drapeau, 1992).
 
-1.  Carga la matriz de comunidad a memoria.
+2.  Carga el paquete `vegan` (primera línea, `library()`).
 
-2.  Imprímela. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd`.
+3.  Carga la matriz de comunidad a memoria (segunda línea con `data()`).
+
+4.  Imprímela. Haz que se despliegue, ya sea en la consola de R o en tu `.Rmd` (tercera línea, donde escribirás el nombre del objeto antes del símbolo `#`).
 
 -   Tus respuestas en este bloque de código:
 
@@ -70,7 +74,7 @@ data() #Rellena el nombre del conjunto de datos
  #Aquí escribe el nombre del objeto
 ```
 
-Nota: Tal como explica la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md), prueba tu código en la medida que lo escribes (línea a línea es mejor). No olvides configurar la ejecución de código en la consola de R, marcando la opción `Chunk Output in Console` de la rueda dentada (barra de herramientas de archivo `.Rmd`). Así, cuando presiones *Run* (o las alternativas de teclado) tu código se ejecutará en la consola de R y allí mismo verás los resultados.
+> Notas Tal como explica la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md), prueba tu código línea a línea. Configura la ejecución de código en la consola de R, marcando la opción `Chunk Output in Console` de la rueda dentada (barra de herramientas de archivo `.Rmd`). Así, cuando presiones *Run* (`Ctrl+Enter` para ejecutar la línea seleccionada) tu código se ejecutará en la consola de R y en ésta verás los resultados.
 
 Si lograste imprimir en pantalla un `data.frame` con varias columnas y filas, conseguiste cargar correctamente la matriz de comunidad `mite`.
 
@@ -95,13 +99,20 @@ Tarea 3. Filtra la matriz `mite`
     -   Tus respuestas en este bloque de código:
 
     ``` r
-    mite[,] #Debes colocar tu número y el de la columna dentro del corchete. Lee la guía
+    mite[,] #Debes colocar tu número en el índice de filas, y en el otro el de la columna. Lee la guía
     ```
+
+Tarea 4. Teje
+-------------
+
+Lee la [sección "Antes de tejer"](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md#antes-de-tejer) y la [sección "Teje"](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md#teje) de la Guía Mínima de RMarkdown. Cuando estés listo/a, teje tu `.Rmd`. Generarás un `.md` nuevo, que contendrá los cambios que hayas hecho incluyendo los resultados que produzca tu código. Como pone la Guía, "Debes estar pendiente a los errores...", porque si el código no se ejecuta correctamente, no se podrá generar el `.md`. Por ello es muy importante que, antes de tejer
 
 Tarea final: *commit*&gt;*push*
 -------------------------------
 
 Usa la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md) para sincronizar con tu repo remoto.
+
+Si llegaste hasta aquí sin fallos, pasaste varios mundos. Sin embargo, las probabilidades de que encuentres tropiezos son de más de un 60%. Tropiezos, errores, fallos, "da error" conllevarán aprendizajes.
 
 Referencias
 ===========
