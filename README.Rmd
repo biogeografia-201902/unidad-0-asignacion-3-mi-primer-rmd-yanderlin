@@ -7,7 +7,7 @@ csl: apa.csl
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   collapse=TRUE,
-  eval = F
+  eval = T
 )
 ```
 
