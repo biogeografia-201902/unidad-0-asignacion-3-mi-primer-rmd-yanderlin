@@ -133,6 +133,8 @@ mite[65,0] #Debes colocar tu número en el índice de filas, y en el otro el de 
 
 >Como pone la Guía, "Debes estar pendiente a los errores...", porque si el código no se ejecuta correctamente, no se podrá generar el `.md`. Por ello es muy importante que, antes de tejer, hayas ejecutado tu código en la consola y comprobado que devuelve resultados sin errores.
 
+Listo
+
 ## Tarea final: *commit*>*push*
 
 * **Usa la guía [¿Cómo realizar una asignación?](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/como-hacer-una-asignacion.md) para sincronizar con tu repo remoto.**
