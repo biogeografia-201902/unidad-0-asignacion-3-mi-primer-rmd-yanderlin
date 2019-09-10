@@ -397,7 +397,7 @@ mite[65,] #Debes colocar tu número asignado dentro del corchete donde correspon
 ## 65        0       25
 ```
 
--   **Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?**
+-   \*\*Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?*0*
 
 **Tus respuestas en este bloque de código:**
 
