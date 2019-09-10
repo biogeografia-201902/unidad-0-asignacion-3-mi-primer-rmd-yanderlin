@@ -95,7 +95,7 @@ A partir de este punto, necesitarás editar el archivo `README.Rmd` (recalco, el
 
 >El símbolo `#` **dentro los bloques de código** precede comentarios. R ignora lo escrito a partir de `#`. Verás que usaré `#` para colocar pistas sobre lo solicitado.
 
-**Tus respuestas en este bloque de código:**
+**Tus respuestas en este bloque de código:**.
 ```{r}
 library(vegan) #Escribe el nombre del paquete al cual pertenece el conjunto de datos entre los paréntesis
 data(mite) #Rellena el nombre del conjunto de datos entre los paréntesis
