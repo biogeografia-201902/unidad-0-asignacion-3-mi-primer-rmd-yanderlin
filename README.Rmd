@@ -2,7 +2,9 @@
 output: github_document
 bibliography: biblio.bib
 csl: apa.csl
----
+editor_options: 
+  chunk_output_type: console
+---  
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -95,14 +97,14 @@ A partir de este punto, necesitarás editar el archivo `README.Rmd` (recalco, el
 
 **Tus respuestas en este bloque de código:**
 ```{r}
-library() #Escribe el nombre del paquete al cual pertenece el conjunto de datos entre los paréntesis
-data() #Rellena el nombre del conjunto de datos entre los paréntesis
-  #Por delante del símbolo de almohadilla, escribe el nombre del objeto
+library(vegan) #Escribe el nombre del paquete al cual pertenece el conjunto de datos entre los paréntesis
+data(mite) #Rellena el nombre del conjunto de datos entre los paréntesis
+mite#Por delante del símbolo de almohadilla, escribe el nombre del objeto
 ```
 
 > Tal como explica la [Guía mínima de RMarkdown](https://github.com/biogeografia-201902/material-de-apoyo/blob/master/ref/guia-minima-de-rmarkdown.md), prueba tu código línea a línea. Configura la ejecución de código en la consola de R, marcando la opción `Chunk Output in Console` de la rueda dentada (barra de herramientas de archivo `.Rmd`). Así, cuando presiones *Run>Run Selected Line(s)* (o `Ctrl+Enter`) para ejecutar la o las líneas seleccionadas. Tu código se ejecutará en la consola de R y en ésta verás los resultados.
 
-Si lograste ver en pantalla un `data.frame` con varias columnas y filas, conseguiste cargar e "imprimir" correctamente la matriz de comunidad `mite`.
+Si lograste ver en pantalla un `data.frame` con varias columnas y filas, conseguiste cargar e "imprimir" correctamente la matriz de comunidad `mite`. .
 
 
 ## Tarea 3. Filtra la matriz `mite`
@@ -116,7 +118,7 @@ Si lograste ver en pantalla un `data.frame` con varias columnas y filas, consegu
 mite[,] #Debes colocar tu número asignado dentro del corchete donde corresponda.
 ```
 
-* **Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?**
+* **Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?** 
 
 **Tus respuestas en este bloque de código:**
 ```{r}
