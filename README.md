@@ -397,13 +397,13 @@ mite[65,] #Debes colocar tu número asignado dentro del corchete donde correspon
 ## 65        0       25
 ```
 
--   \*\*Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?*0*
+-   \*\*Usando la misma guía, ¿cuántos individuos hay de la especie de la columna número 2 en la fila (sitio) que corresponde con tú número?
 
-**Tus respuestas en este bloque de código:**
+\*\*Tus respuestas en este bloque de código:*2*
 
 ``` r
-mite[65,0] #Debes colocar tu número en el índice de filas, y en el otro el de la columna. Lee la guía
-## data frame with 0 columns and 1 row
+mite[65,2] #Debes colocar tu número en el índice de filas, y en el otro el de la columna. Lee la guía
+## [1] 0
 ```
 
 Tarea 4. Teje
